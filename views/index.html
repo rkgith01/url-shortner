@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice | freeCodeCamp.org | Raj Kapadia</title>
+    <link
+      rel="icon"
+      href="/public/logo.png"
+      />
+      <!-- type="image/png" -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface wght@400;700&display=swap" rel="stylesheet">
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/public/logo.png" class="logoImg" alt="logo"/>
+      </div>
+      <h1>URL Shortener Microservice</h1>
+    </header>
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/"  required/>
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>from <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></p>
+      <p>made by <a href="https://github.com/rkgith01" target="_blank">Raj Kapadia</a></p>
+    </footer>
+  </body>
+</html>
