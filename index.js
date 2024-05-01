@@ -16,14 +16,14 @@ app.get('/', function(req, res) {
 });
 
 // Your first API endpoint
-app.get('/api/hello', function(req, res) {
+app.get('/api/hello', (req, res) => {
   res.json({ greeting: 'hello API' });
 });
 
 const originalUrl= []
 const shortUrl = []
 
-app.post('/api/shorturl', function(req, res) {
+app.post('/api/shorturl', (req, res) => {
   const url = req.body.url
   const getIndex = originalUrl.indexOf(url)
   // console.log({getIndex})
@@ -59,7 +59,7 @@ app.post('/api/shorturl', function(req, res) {
 })
 
 
-app.get('/api/shorturl/:shortUrl', function(req, res) {
+app.get('/api/shorturl/:shortUrl', (req, res) => {
   const newUrl = req.params.shortUrl
   const getnewIndex = shortUrl.indexOf(Number(newUrl))
 
